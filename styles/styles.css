@@ -33,7 +33,7 @@
 }
 
 .taskbar {
-  background-color: #c3c3c3;
+  background-color: #d3d0c8;
   display: flex;
   justify-content: space-between;
   color: #000;
@@ -46,7 +46,7 @@
   background-color: #d3d0c8;
   margin: 2px;
   text-align: center;
-  padding: 5px 5px;
+  padding: 10px 10px;
   display: flex;
   align-items: center;
   border: 1px solid;
@@ -57,6 +57,75 @@
 }
 
 .window {
-  width: 700px;
-  border: 3px solid grey;
+  border: 2px solid;
+  border-bottom-color: #959492;
+  border-right-color: #959492;
+  border-top-color: #f4f3f1;
+  border-left-color: #f4f3f1;
+  width: 800px;
+  height: 276px;
+  background-color: #d3d0c8;
+  padding: 2px;
+}
+.window__name {
+  background: rgb(11, 36, 106);
+  background: linear-gradient(90deg, rgb(11, 36, 106) 0%, rgb(169, 202, 237) 100%);
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+}
+.window__name--info {
+  display: flex;
+  align-items: center;
+}
+.window__menu {
+  border: 1px solid #9d9c9a;
+  margin-bottom: 3px;
+}
+.window__menu--one {
+  display: flex;
+  align-items: center;
+  border: 2px solid;
+  border-bottom-color: #959492;
+  border-right-color: #959492;
+  border-top-color: #f4f3f1;
+  border-left-color: #f4f3f1;
+  height: 20px;
+}
+.window__menu--one > p {
+  padding: 0px 7px;
+}
+.window__menu--three {
+  display: flex;
+  align-items: center;
+  border: 2px solid;
+  border-bottom-color: #959492;
+  border-right-color: #959492;
+  border-top-color: #f4f3f1;
+  border-left-color: #f4f3f1;
+}
+.window__menu--three .addbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 670px;
+  background-color: #fff;
+  border: 1px solid;
+  border-top-color: #959492;
+  border-left-color: #959492;
+  border-bottom-color: #f4f3f1;
+  border-right-color: #f4f3f1;
+}
+.window__menu--three .addbar__l {
+  display: flex;
+  align-items: center;
+}
+.window__main {
+  border: 1px solid;
+  border-top-color: #959492;
+  border-left-color: #959492;
+  border-bottom-color: #f4f3f1;
+  border-right-color: #f4f3f1;
 }
