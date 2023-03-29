@@ -2,9 +2,24 @@
 @forward "./theme";
 @forward "./mixins";
 
+// * {
+//   padding: 0;
+//   margin: 0;
+//   font-size: $main-font-size;
+//   font-family: $main-font-family;
+// }
+
+$l-pink: #ffe3e2;
+$pink: #ffd7d5;
+$d-pink: #ffdad8;
+
 * {
   padding: 0;
   margin: 0;
   font-size: $main-font-size;
-  font-family: $main-font-family;
+  font-family: $font;
+}
+
+body {
+  background-color: $pink;
 }

@@ -1,61 +1,141 @@
 @use "./base" as *;
 
-// desktop
+// #desktop {
+//   color: $white;
+// }
+// .wallpaper {
+//   background-color: $blue;
+//   display: flex;
+//   justify-content: space-between;
+//   padding-bottom: 100px;
+//   &--left {
+//     margin-left: 5px;
+//   }
 
-#desktop {
-  color: $white;
-}
-.wallpaper {
-  background-color: $blue;
+//   &--right {
+//   }
+// }
+
+// .shortcuts {
+//   display: flex;
+//   flex-direction: column;
+
+//   &__item {
+//     padding: 20px 0px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+
+//     > h2 {
+//       padding-top: 7px;
+//     }
+//   }
+// }
+
+// .taskbar {
+//   background-color: $grey;
+//   display: flex;
+//   justify-content: space-between;
+//   color: $black;
+//   height: 25px;
+
+//   &--left {
+//     > .start {
+//       > img {
+//         height: 25px;
+//       }
+//     }
+//   }
+
+//   &--right {
+//     background-color: #d3d0c8;
+//     margin: 2px;
+//     text-align: center;
+//     padding: 10px 10px;
+//     display: flex;
+//     align-items: center;
+//     @include recess-border;
+//   }
+// }
+
+//apple
+
+.menu {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 100px;
-  &--left {
-    margin-left: 5px;
+  align-items: center;
+  background-color: $l-pink;
+  height: 50px;
+  &__left {
+    display: flex;
+    align-items: center;
+
+    > p {
+      padding: 0px 16px;
+    }
+
+    > #apple {
+      font-size: 24px;
+    }
+
+    > #app {
+      font-weight: bold;
+    }
   }
 
-  &--right {
+  &__right {
+    display: flex;
+    padding-right: 35px;
+    > p {
+      padding: 0px 16px;
+    }
   }
 }
 
-.shortcuts {
+.wallpaper {
+  background-color: $pink;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
-  &__item {
-    padding: 20px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  &__full {
+    // border: 1px solid black;
+    padding-left: 100px;
 
-    > h2 {
-      padding-top: 7px;
+    &--l {
+      //   border: 1px solid black;
+    }
+
+    &--r {
+      display: flex;
+      justify-content: flex-end;
+      //   border: 1px solid black;
     }
   }
 }
 
-.taskbar {
-  background-color: $grey;
+.dock {
+  background-color: $d-pink;
   display: flex;
-  justify-content: space-between;
-  color: $black;
-  height: 25px;
-
-  &--left {
-    > .start {
-      > img {
-        height: 25px;
-      }
+  align-items: center;
+  border-radius: 20px;
+  width: 280px;
+  padding: 5px 5px 1px 5px;
+  border: 0.5px solid #ba9a98;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 7px;
+  //   box-shadow: 5px 5px 5px #e2bab9, -5px -5px 5px #e2bab9;
+  &__app {
+    &--img {
+      width: 70px;
     }
   }
+}
 
-  &--right {
-    background-color: #d3d0c8;
-    margin: 2px;
-    text-align: center;
-    padding: 10px 10px;
-    display: flex;
-    align-items: center;
-    @include recess-border;
-  }
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
