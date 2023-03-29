@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 9pt;
+  font-family: "Microsoft Sans Serif", sans-serif;
+}
+
+#desktop {
+  color: #fff;
+}
+
+.wallpaper {
+  background-color: #3b6da6;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+.wallpaper--left {
+  margin-left: 5px;
+}
+.shortcuts {
+  display: flex;
+  flex-direction: column;
+}
+.shortcuts__item {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shortcuts__item > h2 {
+  padding-top: 7px;
+}
+
+.taskbar {
+  background-color: #c3c3c3;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  height: 25px;
+}
+.taskbar--left > .start > img {
+  height: 25px;
+}
+.taskbar--right {
+  background-color: #d3d0c8;
+  margin: 2px;
+  text-align: center;
+  padding: 5px 5px;
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  border-top-color: #959492;
+  border-left-color: #959492;
+  border-bottom-color: #f4f3f1;
+  border-right-color: #f4f3f1;
+}
+
+.window {
+  width: 700px;
+  border: 3px solid grey;
+}
