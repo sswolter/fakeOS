@@ -7,34 +7,49 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <script src="./scripts/scripts.js" defer></script>
+
     <script type="module" src="./scripts/notepad.js" defer></script>
   </head>
   <body>
-    <main class="desktop">
-      <div class="desktop__main">
-        <div class="desktop__main--r">
-          <div class="icon">
-            <img src="./assets/imageres_54.ico" alt="" class="bin-icon" />
-            <p>Recycle Bin</p>
+    <div class="screen">
+      <main class="desktop">
+        <div class="desktop__main">
+          <div class="desktop__main--r">
+            <div class="icon">
+              <img src="./assets/imageres_54.ico" alt="" class="bin-icon" />
+              <p>Recycle Bin</p>
+            </div>
+            <div class="icon">
+              <img src="./assets/notepad.png" alt="" class="notepad-icon" />
+              <p>Notepad</p>
+            </div>
           </div>
-          <div class="icon">
-            <img src="./assets/notepad.png" alt="" class="notepad-icon" />
-            <p>Notepad</p>
-          </div>
+          <div class="desktop__main--l"></div>
         </div>
-        <div class="desktop__main--l"></div>
-      </div>
+      </main>
       <div class="desktop__taskbar">
         <div class="desktop__taskbar--r">
           <img src="./assets/pngwing.com.png" id="startMenu" alt="" />
         </div>
         <div class="desktop__taskbar--l">
           <div class="time-date">
-            <p>7:53 PM</p>
-            <p>31/02/2023</p>
+            <div class="time__container">
+              <p id="hours"></p>
+              <p>:</p>
+              <p id="minutes"></p>
+              <p id="amPm">AM</p>
+            </div>
+            <div class="date__container">
+              <p id="day"></p>
+              <p>/</p>
+              <p id="month"></p>
+              <p>/</p>
+              <p id="year"></p>
+            </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+    <script type="module" src="./scripts/time-date.js" defer></script>
   </body>
 </html>
