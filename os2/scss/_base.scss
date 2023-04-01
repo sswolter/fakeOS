@@ -1,0 +1,17 @@
+@use "./theme" as *;
+@forward "./theme";
+@forward "./mixins";
+
+// * {
+//   padding: 0;
+//   margin: 0;
+//   font-size: $main-font-size;
+//   font-family: $main-font-family;
+// }
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: $main-font-size;
+  font-family: $font;
+}

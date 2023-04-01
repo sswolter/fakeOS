@@ -1,0 +1,58 @@
+@use "./base" as *;
+
+.window {
+  background-color: #fff;
+  width: 700px;
+  height: 500px;
+  display: flex;
+  border-radius: 15px;
+  border: 1px solid #c8c8c8;
+}
+
+.buttons {
+  display: flex;
+
+  > .rndbtn {
+    border: 1px solid;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+  }
+
+  &--red {
+    background-color: #fd4646;
+    color: $red-border;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > p {
+      padding-bottom: 3px;
+    }
+  }
+
+  &--yellow {
+    background-color: #feb024;
+    border-color: $yellow-border;
+    color: $yellow-border;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > p {
+      padding-bottom: 3px;
+    }
+  }
+
+  &--green {
+    background-color: #2ac533;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > p {
+      padding-bottom: 3px;
+    }
+  }
+}

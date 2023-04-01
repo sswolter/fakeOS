@@ -1,0 +1,45 @@
+@use "./base" as *;
+
+#startMenu {
+  width: 40px;
+}
+
+.desktop {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__main {
+    background-color: pink;
+    display: flex;
+    height: 99%;
+
+    &--r {
+      > .icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        > img {
+          width: 60px;
+        }
+      }
+    }
+  }
+
+  &__taskbar {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.603);
+    display: flex;
+    justify-content: space-between;
+
+    &--l {
+      > .time-date {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

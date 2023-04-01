@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#startMenu {
+  width: 40px;
+}
+
+.desktop {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.desktop__main {
+  background-color: pink;
+  display: flex;
+  height: 99%;
+}
+.desktop__main--r > .icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.desktop__main--r > .icon > img {
+  width: 60px;
+}
+.desktop__taskbar {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.603);
+  display: flex;
+  justify-content: space-between;
+}
+.desktop__taskbar--l > .time-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#text-area {
+  width: 98%;
+  height: 300px;
+  resize: none;
+}
+
+.window {
+  width: 500px;
+  height: 352px;
+  border: 1px solid;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+.window__menu {
+  background-color: #fdfafa;
+}
+.window__menu__one {
+  display: flex;
+  justify-content: space-between;
+}
+.window__menu__one--title {
+  display: flex;
+}
+.window__menu__one--title > img {
+  width: 20px;
+}
+.window__menu__one--buttons {
+  display: flex;
+}
+.window__menu__one--buttons > p {
+  padding: 2px 20px;
+  text-align: center;
+}
+.window__menu__one--buttons > p:hover {
+  background-color: rgba(0, 0, 0, 0.1529411765);
+}
+.window__menu__one--buttons > #close:hover {
+  background-color: red;
+  color: #fff;
+}
+.window__menu__two {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1529411765);
+}
+.window__menu__two > p {
+  padding: 4px;
+}
+.window__menu__two > p:hover {
+  background-color: rgba(0, 0, 0, 0.1529411765);
+}
+.window__main {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+.window__main > #text-area {
+  border: none;
+  font-family: consolas, "Courier New", monospace;
+}
+.window__main > #text-area:focus {
+  outline: none;
+}

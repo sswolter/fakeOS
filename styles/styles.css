@@ -80,32 +80,60 @@ body {
   height: 500px;
   display: flex;
   border-radius: 15px;
-  border: 1px solid gray;
-}
-.window__sidebar {
-  background-color: #e5e2e2;
-  width: 160px;
-  border-right: 1px solid gray;
-}
-.window__sidebar > .buttons {
-  display: flex;
-}
-.window__main--isa {
-  display: flex;
-  align-items: center;
-  background-color: #fdfafa;
-  padding-left: 20px;
-  height: 50px;
-  border-bottom: 1px solid gray;
+  border: 1px solid #c8c8c8;
 }
 
-.rndbtn {
+.buttons {
+  display: flex;
+}
+.buttons > .rndbtn {
   border: 1px solid;
   border-radius: 50%;
   height: 15px;
   width: 15px;
+  margin: 5px;
+}
+.buttons--red {
+  background-color: #fd4646;
+  color: #ed3e3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons--red > p {
+  padding-bottom: 3px;
+}
+.buttons--yellow {
+  background-color: #feb024;
+  border-color: rgb(237, 162, 36);
+  color: rgb(237, 162, 36);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons--yellow > p {
+  padding-bottom: 3px;
+}
+.buttons--green {
+  background-color: #2ac533;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons--green > p {
+  padding-bottom: 3px;
 }
 
-.isa__arr-back {
-  padding-right: 20px;
+.menu {
+  background-color: #fdfafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.window {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
 }
