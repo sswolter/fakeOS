@@ -1,0 +1,42 @@
+.window {
+  &__menu {
+    &__two {
+      &--item {
+        padding: 10px 30px;
+
+        &:hover {
+          background-color: grey;
+        }
+      }
+    }
+  }
+  &__main {
+    display: flex;
+
+    &--menu {
+      > p {
+        padding: 10px;
+        &:hover {
+          background-color: gray;
+        }
+      }
+    }
+
+    &--content {
+    }
+  }
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+
+  &--item {
+    height: 30px;
+    padding: 10px 20px;
+    &:hover {
+      background-color: aqua;
+    }
+  }
+}

@@ -28,5 +28,4 @@ const createElement = (elementType, classList, parentNode) => {
 //   createElement("div", "window", document.querySelector(".wallpaper--right"));
 // });
 
-const notepadIcon = document.querySelector(".notepad-icon");
 const desktop = document.querySelector(".desktop__main");

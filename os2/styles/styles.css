@@ -8,6 +8,9 @@
 #startMenu {
   width: 40px;
 }
+#startMenu:hover {
+  background-color: gray;
+}
 
 .screen {
   width: 100vw;
@@ -23,6 +26,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  background-color: #ffd7d5;
 }
 .desktop__main {
   background-color: pink;
@@ -39,20 +43,55 @@
 }
 .desktop__taskbar {
   color: white;
-  background-color: rgba(0, 0, 0, 0.603);
+  background-color: rgb(162, 158, 158);
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 10px 20px;
 }
-.desktop__taskbar--l > .time-date {
+.desktop__taskbar--r > .time-date {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.desktop__taskbar--l > .time-date > .time__container {
+.desktop__taskbar--r > .time-date > .time__container {
   display: flex;
 }
-.desktop__taskbar--l > .time-date > .date__container {
+.desktop__taskbar--r > .time-date > .date__container {
   display: flex;
+}
+
+.start-menu {
+  background-color: black;
+  height: 50%;
+  width: 200px;
+  bottom: 85px;
+  border: 1px solid blue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  display: block;
+}
+.start-menu__container {
+  display: flex;
+  align-content: flex-end;
+  border: 1px solid greenyellow;
+}
+.start-menu__container--left {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  border: 1px solid yellow;
+}
+.start-menu__container--left > .start-icon {
+  width: 25px;
+  padding: 10px;
+}
+.start-menu__container--left > .start-icon:hover {
+  background-color: gray;
 }
 
 .window {
@@ -122,4 +161,32 @@
 }
 .window__main > #text-area:focus {
   outline: none;
+}
+
+.window__menu__two--item {
+  padding: 10px 30px;
+}
+.window__menu__two--item:hover {
+  background-color: grey;
+}
+.window__main {
+  display: flex;
+}
+.window__main--menu > p {
+  padding: 10px;
+}
+.window__main--menu > p:hover {
+  background-color: gray;
+}
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.content-container--item {
+  height: 30px;
+  padding: 10px 20px;
+}
+.content-container--item:hover {
+  background-color: aqua;
 }

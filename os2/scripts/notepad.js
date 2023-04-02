@@ -1,5 +1,7 @@
 let isAppOpen = false;
 
+const notepadIcon = document.querySelector(".notepad-icon");
+
 notepadIcon.addEventListener("dblclick", () => {
   if (isAppOpen) {
     //exit function/event if app open

@@ -1,21 +1,25 @@
 const displayTime = () => {
   const dateTime = new Date();
-  const hours = dateTime.getHours();
+  let hours = dateTime.getHours();
   const minutes = dateTime.getMinutes();
   const amPm = document.getElementById("amPm");
 
-  document.getElementById("hours").innerHTML = hours;
-  document.getElementById("minutes").innerHTML = minutes;
-
   if (hours >= 12) {
-    amPm.innerText = " PM";
+    amPm.innerHTML = "&nbsp;PM";
   } else {
-    amPm.innerText = " AM";
+    amPm.innerHTML = "&nbsp;AM";
   }
 
   if (hours > 12) {
     hours = hours - 12;
   }
+
+  if (minutes.length < 2) {
+    document.getElementById("minutes").innerHTML = 0 + minutes;
+  }
+
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
 };
 setInterval(displayTime, 10);
 
@@ -24,7 +28,7 @@ console.log("date time script");
 const displayDate = () => {
   const dateTime = new Date();
   const year = dateTime.getFullYear();
-  const month = dateTime.getMonth();
+  const month = dateTime.getMonth() + 1;
   const day = dateTime.getDate();
   console.log(year);
 

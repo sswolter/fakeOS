@@ -2,6 +2,9 @@
 
 #startMenu {
   width: 40px;
+  &:hover {
+    background-color: gray;
+  }
 }
 .screen {
   width: 100vw;
@@ -16,6 +19,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  background-color: $pink;
 
   &__main {
     background-color: pink;
@@ -36,11 +40,16 @@
 
   &__taskbar {
     color: white;
-    background-color: rgba(0, 0, 0, 0.603);
+    background-color: rgb(162, 158, 158);
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    // height: 40px;
+    padding: 10px 20px;
 
-    &--l {
+    &--r {
       > .time-date {
         display: flex;
         flex-direction: column;
@@ -52,6 +61,40 @@
 
         > .date__container {
           display: flex;
+        }
+      }
+    }
+  }
+}
+
+.start-menu {
+  background-color: black;
+  // position: fixed;
+  height: 50%;
+  width: 200px;
+  bottom: 85px;
+  border: 1px solid blue;
+  color: white;
+  display: flex;
+  // align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
+  display: block;
+
+  &__container {
+    display: flex;
+    align-content: flex-end;
+    border: 1px solid greenyellow;
+    &--left {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      border: 1px solid yellow;
+      > .start-icon {
+        width: 25px;
+        padding: 10px;
+        &:hover {
+          background-color: gray;
         }
       }
     }
