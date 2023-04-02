@@ -1,61 +1,27 @@
 @use "./base" as *;
+.window__main__content {
+  width: 100%;
+  > p {
+    text-align: center;
+    padding: 10px;
+  }
+  &--sort {
+    display: flex;
+    justify-content: space-between;
 
-// .window {
-//   @include border;
-//   width: 800px;
-//   height: 276px;
-//   background-color: $grey;
-//   padding: 2px;
-//   &__name {
-//     @include blue-gradient;
-//     color: $white;
-//     font-weight: bold;
-//     display: flex;
-//     justify-content: space-between;
-//     height: 20px;
-//     &--info {
-//       display: flex;
-//       align-items: center;
-//     }
-//   }
+    > p {
+      border-left: 1px solid gray;
+      text-align: start;
+      padding-left: 10px;
+      color: rgb(113, 113, 114);
+    }
+  }
+}
 
-//   &__menu {
-//     @include grey-flat-border;
-//     margin-bottom: 3px;
-//     &--one {
-//       display: flex;
-//       align-items: center;
-//       @include border;
-//       height: 20px;
-//       > p {
-//         padding: 0px 7px;
-//         &:hover {
-//         }
-//       }
-//     }
-
-//     &--three {
-//       display: flex;
-//       align-items: center;
-//       @include border;
-
-//       .addbar {
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         width: 670px;
-//         background-color: $white;
-//         @include recess-border;
-//         &__l {
-//           display: flex;
-//           align-items: center;
-//         }
-//       }
-//     }
-//   }
-
-//   &__main {
-//     // padding: 0px 0px 0px 1px;
-//     @include recess-border;
-//   }
-// }
+#bin {
+  top: 30%;
+  left: 3%;
+  width: 800px;
+  height: 500px;
+  background-color: white;
+}

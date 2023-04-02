@@ -4,56 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desktop</title>
+    <title>Windows 10 FakeOS</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <script src="./scripts/scripts.js" defer></script>
+
+    <script type="module" src="./scripts/taskbar.js" defer></script>
+    <script type="module" src="./scripts/time-date.js" defer></script>
+    <script type="module" src="./scripts/notepad.js" defer></script>
+    <script type="module" src="./scripts/this-pc.js" defer></script>
+    <script type="module" src="./scripts/bin.js" defer></script>
   </head>
   <body>
-    <div id="desktop">
-      <main class="wallpaper">
-        <div class="wallpaper--left">
-          <div class="shortcuts">
-            <div class="shortcuts__item">
-              <img src="./assets/Windows 2000 My Documents.ico" alt="" />
-              <h2>My Documents</h2>
-            </div>
-            <div class="shortcuts__item">
-              <img src="./assets/Windows 2000 My Computer.ico" alt="" />
-              <h2>My Computer</h2>
-            </div>
-            <div class="shortcuts__item">
-              <img
-                src="./assets/Windows 2000 Network Neighborhood.ico"
-                alt=""
-              />
-              <h2>My Network Places</h2>
-            </div>
-            <div class="shortcuts__item" id="bin">
-              <img src="./assets/Windows 2000 Recycle Bin (full).ico" alt="" />
-              <h2>Recycle Bin</h2>
-            </div>
-            <div class="shortcuts__item">
-              <img src="./assets/Windows 2000 The Internet.ico" alt="" />
-              <h2>Internet Explorer</h2>
-            </div>
-          </div>
-        </div>
-
-        <div class="wallpaper--right"></div>
-      </main>
-      <div class="taskbar">
-        <div class="taskbar--left">
+    <div class="desktop">
+      <div class="desktop__main">
+        <div class="desktop__main--icon">
           <img
-            class="start"
-            src="https://cdn.vox-cdn.com/thumbor/cXbP6ZoTn8aPzWfGb9WsyJzT7Bo=/800x0/filters:no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/6028879/win95s.0.gif"
-            alt=""
-            height="25px"
+            src="./assets/imageres_55.ico"
+            alt="empty recycle bin icon"
+            id="bin-icon"
           />
+          <p>Recycle Bin</p>
         </div>
-        <div class="taskbar--right">
-          <p>1:50 PM</p>
+        <div class="desktop__main--icon">
+          <img
+            src="./assets/notepad.png"
+            alt="notepad icon"
+            id="notepad-icon"
+          />
+          <p>Notepad</p>
+        </div>
+        <div class="desktop__main--icon">
+          <img
+            src="./assets/imageres_109.ico"
+            alt="this pc icon"
+            id="pc-icon"
+          />
+          <p>This PC</p>
         </div>
       </div>
+    </div>
+    <div class="taskbar-menu">
+      <div class="taskbar-menu__one">
+        <div class="taskbar-menu__one--icon">
+          <img src="./assets/icons8-user-64.png" alt="" />
+          <p>User</p>
+        </div>
+        <div class="taskbar-menu__one--icon">
+          <img src="./assets/icons8-file-64.png" alt="" />
+          <p>Documents</p>
+        </div>
+        <div class="taskbar-menu__one--icon">
+          <img src="./assets/icons8-picture-64.png" alt="" />
+          <p>Pictures</p>
+        </div>
+        <div class="taskbar-menu__one--icon">
+          <img src="./assets/icons8-settings-64.png" alt="" />
+          <p>Settings</p>
+        </div>
+        <div class="taskbar-menu__one--icon">
+          <img src="./assets/icons8-shutdown-64.png" alt="" />
+          <p>Power</p>
+        </div>
+      </div>
+      <div class="taskbar-menu__two"></div>
+    </div>
+    <div class="taskbar">
+      <div class="taskbar__one">
+        <div class="taskbar__one--start">
+          <img src="./assets/pngfind.com-start-button-png-1052915.png" alt="" />
+        </div>
+      </div>
+      <div class="taskbar__two">
+        <div class="taskbar__two--app"></div>
+        <div class="taskbar__two--app"></div>
+      </div>
+      <div class="taskbar__three">
+        <div class="taskbar__three--collapse">
+          <img
+            src="./assets/icons8-collapse-arrow-64.png"
+            class="three-icon"
+            alt=""
+          />
+        </div>
+        <div class="taskbar__three--wifi">
+          <img src="./assets/icons8-wi-fi-64.png" class="three-icon" alt="" />
+        </div>
+        <div class="taskbar__three--time-date">
+          <div class="time__container">
+            <p id="hours"></p>
+            <p>:</p>
+            <p id="minutes"></p>
+            <p id="amPm"></p>
+          </div>
+          <div class="date__container">
+            <p id="day"></p>
+            <p>/</p>
+            <p id="month"></p>
+            <p>/</p>
+            <p id="year"></p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="taskbar__four"></div> -->
     </div>
   </body>
 </html>
