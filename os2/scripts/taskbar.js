@@ -1,14 +1,23 @@
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+// const startMenu = document.querySelector(".start-menu");
+// const starBtn = document.getElementById("startMenu");
 
-const startMenu = document.querySelector(".start-menu");
-const starBtn = document.getElementById("startMenu");
+// const toggleStartMenu = () => {
+//   if (startMenu.style.display === "none") {
+//     startMenu.style.display = "block";
+//   } else {
+//     startMenu.style.display = "none";
+//   }
+// };
+
+// starBtn.addEventListener("click", () => {
+//   toggleStartMenu();
+// });
+
+const startMenu = document.querySelector(".taskbar-menu");
+const startBtn = document.querySelector(".taskbar__one--start");
+
+console.log(startMenu);
+console.log(startBtn);
 
 const toggleStartMenu = () => {
   if (startMenu.style.display === "none") {
@@ -18,6 +27,6 @@ const toggleStartMenu = () => {
   }
 };
 
-starBtn.addEventListener("click", () => {
+startBtn.addEventListener("click", () => {
   toggleStartMenu();
 });

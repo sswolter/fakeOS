@@ -15,13 +15,15 @@ const displayTime = () => {
   }
 
   if (minutes.length < 2) {
-    document.getElementById("minutes").innerHTML = 0 + minutes;
+    document.getElementById("minutes").innerHTML = `0${minutes}`;
+  } else {
+    document.getElementById("minutes").innerHTML = minutes;
   }
 
+  console.log(`0${minutes}`);
   document.getElementById("hours").innerHTML = hours;
-  document.getElementById("minutes").innerHTML = minutes;
 };
-setInterval(displayTime, 10);
+setInterval(displayTime, 1000);
 
 console.log("date time script");
 
