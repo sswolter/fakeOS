@@ -16,11 +16,13 @@
 
   &__one {
     padding-left: 25px;
-    &:hover {
-      background-color: $taskbar-highlight;
-    }
 
     &--start {
+      overflow: hidden;
+
+      &:hover {
+        background-color: $taskbar-highlight;
+      }
       > img {
         width: 20px;
       }
@@ -36,10 +38,16 @@
       //   align-items: center;
     }
 
+    &--wifi {
+      padding-right: 10px;
+    }
+
     &--time-date {
       padding-right: 25px;
+
       > .time__container {
         display: flex;
+        padding-left: 2px;
       }
 
       > .date__container {
@@ -55,7 +63,7 @@
 }
 
 .three-icon {
-  width: 20px;
+  width: 30px;
   padding: 0px 5px;
 }
 
@@ -66,13 +74,19 @@
   bottom: 0;
   height: 40%;
   width: 20%;
+  color: white;
 
   &__one {
     &--icon {
       padding: 20px 23px;
+      display: flex;
 
       &:hover {
         background-color: $taskbar-menu-highlight;
+      }
+
+      p {
+        padding: 5px 0px 0px 20px;
       }
 
       > img {

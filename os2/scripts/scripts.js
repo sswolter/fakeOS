@@ -9,9 +9,10 @@ console.log("is linked");
 // console.dir(screenRight);
 
 // function to create window
-const createElement = (elementType, classList, parentNode) => {
+const createElement = (elementType, classList, id, parentNode) => {
   const newElement = document.createElement(elementType);
   newElement.classList.add(classList);
+  newElement.id = id;
   parentNode.appendChild(newElement);
 };
 

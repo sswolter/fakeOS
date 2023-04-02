@@ -20,7 +20,6 @@ const displayTime = () => {
     document.getElementById("minutes").innerHTML = minutes;
   }
 
-  console.log(`0${minutes}`);
   document.getElementById("hours").innerHTML = hours;
 };
 setInterval(displayTime, 1000);
@@ -32,7 +31,6 @@ const displayDate = () => {
   const year = dateTime.getFullYear();
   const month = dateTime.getMonth() + 1;
   const day = dateTime.getDate();
-  console.log(year);
 
   document.getElementById("day").innerHTML = day;
   document.getElementById("month").innerHTML = month;

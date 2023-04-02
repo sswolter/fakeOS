@@ -1,30 +1,29 @@
-let isAppOpen = false;
-
-const thisPcIcon = document.querySelector(".pc-icon");
+const thisPcIcon = document.querySelector("#pc-icon");
+console.log(thisPcIcon);
 
 thisPcIcon.addEventListener("dblclick", () => {
+  let isAppOpen = false;
   if (isAppOpen) {
     //exit function/event if app open
     return;
   }
   isAppOpen = true;
 
-  createElement("div", "window", desktop);
+  createElement("div", "window", "pc", desktop);
 
-  const windowDiv = document.querySelector(".window");
+  const windowDiv = document.querySelector("#pc");
 
-  const thisPcContent = `
-  <div class="window__menu">
+  const thisPcContent = ` <div class="window__menu">
   <div class="window__menu__one">
     <div class="window__menu__one--title">
-      <img src="./assets/imageres_109.ico" alt="">
+      <img src="./assets/imageres_109.ico" alt="" height="20px" width="20px">
       <p>This PC</p>
     </div>
 
     <div class="window__menu__one--buttons">
       <p id="minimise">—</p>
       <p id="miaxmise">ロ</p>
-      <p id="close">&#x2715</p>
+      <p id="close" class="close">&#x2715</p>
     </div>
   </div>
   <div class="window__menu__two">
@@ -35,28 +34,53 @@ thisPcIcon.addEventListener("dblclick", () => {
 </div>
 <div class="window__main">
   <div class="window__main--menu">
-    <p>Quick access</p>
-    <p>This PC</p>
-    <p>Network</p>
+    <div class="sidebar">
+      <img src="./assets/shell32_51380.ico" alt="" height="20px">
+      <p>Quick access</p>
+    </div>
+
+    <div class="sidebar">
+      <img src="./assets/imageres_109.ico" alt="" height="20px">
+      <p>This PC</p>
+    </div>
+   
+    <div class="sidebar">
+      <img src="./assets/imageres_25.ico" alt="" height="20px">
+      <p>Network</p>
+    </div>
   </div>
   <div class="window__main--content">
     <h1>Folders (5)</h1>
     <div class="content-container">
-        <div class="content-container--item">3D Objects</div>
-        <div class="content-container--item">Desktop</div>
-        <div class="content-container--item">Documents</div>
-        <div class="content-container--item">Downloads</div>
-        <div class="content-container--item">Music</div>
-        <div class="content-container--item">Pictures</div>
-        <div class="content-container--item">Videos</div>
+
+        <div class="content-container--item">
+          <img src="./assets/imageres_183.ico" alt="" height="50px">
+          <p>Desktop</p></div>
+        <div class="content-container--item">
+          <img src="./assets/imageres_112.ico" alt="" height="50px">
+          <p>Documents</p></div>
+        <div class="content-container--item">
+          <img src="./assets/imageres_184.ico" alt="" height="50px">
+          <p>Downloads</p></div>
+        <div class="content-container--item">
+          <img src="./assets/imageres_108.ico" alt="" height="50px">
+          <p>Music</p></div>
+        <div class="content-container--item">
+          <img src="./assets/imageres_113.ico" alt="" height="50px">
+          <p>Pictures</p>
+        </div>
     </div>
     <h1>Devices and drives (1)</h1>
     <div class="content-container">
-        <div class="content-container--item">Windows (C:)</div>
+        <div class="content-container--item">
+          <img src="./assets/imageres_36.ico" alt="" height="50px">
+          <p>Windows (C:)</p>
+        </div>
     </div>
 
   </div>
 </div>
+
 `;
 
   windowDiv.innerHTML = thisPcContent;

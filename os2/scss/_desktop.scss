@@ -107,5 +107,18 @@
   height: 100vh;
 
   &__main {
+    &--icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0px;
+      width: 160px;
+
+      img {
+        height: 50px;
+        width: 50px;
+      }
+    }
   }
 }
