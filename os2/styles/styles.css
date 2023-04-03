@@ -65,7 +65,11 @@ textarea {
   justify-content: center;
   align-items: center;
   padding: 20px 0px;
-  width: 160px;
+  margin-left: 20px;
+  width: 80px;
+}
+.desktop__main--icon:hover {
+  background-color: rgba(72, 72, 72, 0.157);
 }
 .desktop__main--icon img {
   height: 50px;
