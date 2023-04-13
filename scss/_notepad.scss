@@ -1,0 +1,82 @@
+@use "./base" as *;
+#text-area {
+}
+
+.window {
+  width: 500px;
+  height: 352px;
+  border: 1px solid;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  color: black;
+
+  &__menu {
+    background-color: $grey-light;
+    &__one {
+      display: flex;
+      justify-content: space-between;
+
+      &--title {
+        display: flex;
+        align-items: center;
+        padding: 0px 10px;
+        > p {
+          padding-left: 7px;
+          letter-spacing: 0.04em;
+        }
+
+        > img {
+          // margin: 10px 10px 0px 10px;
+        }
+      }
+
+      &--buttons {
+        display: flex;
+
+        > p {
+          padding: 2px 20px;
+          text-align: center;
+
+          &:hover {
+            background-color: #00000027;
+          }
+        }
+
+        > .close:hover {
+          background-color: red;
+          color: #fff;
+        }
+      }
+    }
+
+    &__two {
+      display: flex;
+      border-bottom: 1px solid #00000027;
+      > p {
+        padding: 4px 10px;
+
+        &:hover {
+          background-color: #00000027;
+        }
+      }
+    }
+  }
+
+  &__main {
+    background-color: #fff;
+
+    > #text-area {
+      border: none;
+      font-family: consolas, "Courier New", monospace;
+      height: 295px;
+      width: 500px;
+      resize: none;
+      box-shadow: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

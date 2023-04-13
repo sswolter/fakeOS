@@ -1,0 +1,27 @@
+@use "./base" as *;
+.window__main__content {
+  width: 100%;
+  > p {
+    text-align: center;
+    padding: 10px;
+  }
+  &--sort {
+    display: flex;
+    justify-content: space-between;
+
+    > p {
+      border-left: 1px solid gray;
+      text-align: start;
+      padding-left: 10px;
+      color: rgb(113, 113, 114);
+    }
+  }
+}
+
+#bin {
+  top: 30%;
+  left: 3%;
+  width: 800px;
+  height: 500px;
+  background-color: white;
+}
